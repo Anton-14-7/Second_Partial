@@ -1,0 +1,41 @@
+<%- include("partials/head"); -%>
+
+<h1>jelou, <%=name-%></h1>
+
+    <h3>jaguar yu?</h3>
+
+    <form action="/blogpost" method="post" class="row g-3">
+        <div class="mb-3 col-md-8 mx-auto">
+            <label for="title" class="form-label">Title of your story</label>
+            <input type="text" class="form-control" name="title" id="title" required>
+        </div>
+        
+        <div class="mb-3 col-md-8 mx-auto">
+            <label for="content" class="form-label">Content</label>
+            <textarea class="form-control" name="content" id="content" rows="5" required></textarea>
+        </div>
+
+        <div class="col-md-8 mx-auto">
+            <button type="submit" class="btn btn-primary">Enter</button>
+        </div>
+    </form>
+
+    <h3>Current posts</h3>
+
+    <% if (locals.posts) { %> 
+        <div class="container">
+            <ul>
+                <% posts.forEach(function(post, index) { %>
+                    <li>
+                        <h4><%= post.title %></h4>
+                        <p>
+                            <%= post.content.length > 100 ? `${post.content.substring(0, 100)}...` : post.content %>
+                        </p>
+                        <a href="/post/<%= index %>">Read More</a>
+                    </li>
+                <% }); %>
+            </ul>
+        </div>
+    <% } %>
+
+<%- include("partials/footer"); -%>

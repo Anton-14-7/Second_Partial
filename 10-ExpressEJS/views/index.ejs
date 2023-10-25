@@ -1,0 +1,20 @@
+<%- include("partials/head"); -%>
+    
+    <h1>Welcome to the age were you can post anything you want</h1>
+    <h3>POST METHOD</h3>
+    <form action="/login" method="post">
+        <label for="name">username</label>
+        <input type="text" name="name" id="name" />
+        <input type="submit" />
+    </form>
+
+    <h3>GET METHOD</h3>
+    <form action="/login" method="get">
+        <label for="name">Username</label>
+        <input type="text" name="name" id="name" />
+        <input type="submit" />
+    </form>
+    <img src="../images/StarLion.png" alt="lion brewery" />
+<%- include("partials/footer"); -%>
+
+

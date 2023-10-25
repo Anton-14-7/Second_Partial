@@ -1,0 +1,17 @@
+<%- include("partials/head"); -%>
+
+<h1><%= post.title %></h1>
+<p><%= post.content %></p>
+
+<!-- Botón para editar el post -->
+<a href="/edit/<%= postIndex %>">Edit Post</a>
+
+<!-- Botón para eliminar el post (con confirmación) -->
+<form action="/delete/<%= postIndex %>" method="POST" onsubmit="return confirm('Are you sure you want to delete this post?');">
+    <button type="submit">Delete Post</button>
+</form>
+
+<a href="/login">Go back to home</a>
+
+
+<%- include("partials/footer"); -%>
