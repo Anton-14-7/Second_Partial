@@ -1,0 +1,111 @@
+
+body{
+  font-family: 'Merriweather', serif;
+  font-family: 'Rowdies', sans-serif;
+  text-align: center;
+}
+
+div {
+    background-color: rgba(0, 0, 0, 0.718);
+    color: rgb(255, 255, 255);
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    font-family: 'Sacramento', cursive;
+    color:rgb(205, 13, 13);
+    font-size: 5.5rem;
+    margin-left: 50px;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+    color:rgb(110, 206, 59);
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    color:rgb(47, 0, 4);
+}
+
+p{
+    font-size: medium;
+}
+
+hr{
+    border: dotted;
+    color: #1f2020;
+    height: 6px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(245, 188, 0);
+}
+
+a:hover{
+    color:rgb(22, 37, 55);
+}
+
+tbody {
+    background-color: rgb(196, 29, 29);
+}
+
+.header_info{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+.header_info{
+    font-size: 1rem;
+
+}
+
+.logo {
+    max-width:  100px;
+    max-height: 100px;
+    border-radius: 50%;
+}
+
+table{
+    background-color: rgb(247, 13, 13);
+    align-items: center;
+    align-self: center;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Mawo{
+    align-content: center;
+    background-color: azure;
+}
+
+.destination {
+    background-color: rgb(9, 126, 7);
+    color: rgb(13, 117, 117);
+    border-color: rgb(0, 3, 5);
+    border-width: 1cm;
+    border-style: dotted;
+}
+
+.destination {
+    background-color: rgb(16, 133, 55);
+    color: rgb(10, 31, 155);
+    border-color: rgb(0, 0, 0);
+    border-width: 1cm;
+    border-style: dashed;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif    ;
+    
+}
