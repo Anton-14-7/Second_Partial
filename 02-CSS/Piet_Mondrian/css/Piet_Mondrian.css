@@ -1,0 +1,64 @@
+div{
+    width:200px;
+    height:200px;
+    border-width: 20px;
+    border-style: solid;
+    position: fixed;
+}
+
+
+
+.topcont{
+    background-color: red;
+    top:130px;
+    left:390px;
+    width:300px;
+    height:300px;
+    border-top-style: solid;
+    
+}
+
+.midcont{
+    background-color: blue;
+    height: 100px;
+    top:450px;
+    left:70px;
+}
+
+.lowcont{
+    background-color: yellow;
+    left:710px;
+    height: 100px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    top:-20px;
+}
+
+.w1{
+    top:-20px;
+    left: 70px;
+    padding-bottom: 650px;
+}
+
+.w2{
+    width:300px;
+    height:300px;
+    padding-bottom: 650px;
+    top:-20px;
+    left:390px;
+}
+
+.w3{
+    top:130px;
+    left:290px;
+    width:300px;
+    height:300px;
+    padding-left: 500px;
+}
+
+.w4{
+    height: 100px;
+    top:450px;
+    left:-30px;
+    padding-left: 200px;
+}
