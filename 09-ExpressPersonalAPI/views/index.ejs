@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express test</title>
+</head>
+
+<body>
+    <h1>Nombres via GET</h1>
+    <% if (locals.error) { %>
+        <h3>
+            <%= error %>
+        </h3>
+        <% } %>
+            <form action="/greet" method="get">
+                Register:
+                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="submit" value="go next">
+            </form>
+
+    
+    <form action="/task" method="post">
+        Input the desired task:
+        <input type="text" name="task" id="task" placeholder="Task">
+        <input type="submit" value="Submit">
+    </form>
+
+    <h3>TODO list</h3>
+    <% if (locals.tasks) { %> 
+        <div class="container">
+            <ul>
+                <% tasks.forEach(function(task, index) { %>
+                    <li><%= task %>
+                        <form action="/task/<%= index %>/delete" method="post">
+                            <input type="submit" value="Delete">
+                        </form>
+                        <form action="/task/<%= index %>/up" method="post">
+                            <input type="submit" value="↑">
+                        </form>
+                        <form action="/task/<%= index %>/down" method="post">
+                            <input type="submit" value="↓">
+                        </form>
+                    </li>
+                <% }); %>
+            </ul>
+        </div>
+    <% } %>
+
+    <a href="/names">Ver nombres en formato JSON</a>  
+    <a href="/task">Ver tareas en formato JSON</a>
+    
+
+</body>
+
+</html>
