@@ -1,0 +1,42 @@
+<%- include("partials/header"); -%>
+    <h1>Welcome to my F1 DB</h1>
+    <form action="/driver" method="post">
+        <h2>Driver information</h2>
+        <input type="text" name="num" id="num" placeholder="Number" />
+        <input type="text" name="code" id="code" placeholder="Code" />
+        <input type="text" name="name" id="name" placeholder="Name" />
+        <input type="text" name="lname" id="lname" placeholder="Last name" />
+        <br />
+        <label for="dob">Date of birth: </label>
+        <input type="date" name="dob" id="dob" />
+        <label for="url">Biography URL: </label>
+        <input type="url" name="url" id="url" />
+        <br />
+        <label for="nation">Nationality: </label>
+        <select name="nation" id="nation">
+            <% countries.forEach((country) => {%>
+                <option value="<%= country.code %>">
+                    <%= country.label %>
+                </option>
+            <% });%>
+        </select>
+        <label for="team">Team: </label>
+        <select name="team" id="team">
+            <% teams.forEach((team) => {%>
+                <option value="<%= team.code %>">
+                    <%= team.name %>
+                </option>
+            <% });%>
+        </select>
+        <p> <input type="submit" /> </p>
+
+    </form>
+
+    <ul>
+        <% drivers.forEach((driver) =>{ %>
+            <li><%= driver.forename %> 
+                <%= driver.surname %>
+            </li>
+        <% });%>
+    </ul>
+<%- include("partials/footer"); -%>
