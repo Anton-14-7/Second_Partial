@@ -1,0 +1,63 @@
+.card-body {
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.2em;
+  }
+  
+  .card-subtitle {
+    font-size: 1em;
+    font-style: italic;
+  }
+  
+  .card-link {
+    color: rgb(79, 79, 79);
+    text-decoration: underline;
+  }
+  
+  .additional-details {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(182, 182, 182); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .character-image {
+    width: 300px; 
+    height: auto;
+    margin-bottom: 10px; 
+    transition: opacity 1s ease-in-out; 
+  }
+  
+  .character-details {
+    text-align: left;
+    max-width: 300px;
+  }
+
+  .blue-text {
+    color: blue;
+  }
+  
+  .red-text {
+    color: red;
+  }
+
+  .thumbs-container {
+    margin-top: 10px;
+  }
+  
+  .thumb-icon {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .thumb-icon.liked {
+    color: #f2ff00; }
+  
+  .thumb-icon.disliked {
+    color: #dc3545; 
+  }

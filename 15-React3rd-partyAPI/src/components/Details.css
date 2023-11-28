@@ -1,0 +1,40 @@
+.additional-details {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: black; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .character-image {
+    width: 300px; 
+    height: auto;
+    margin-bottom: 10px; 
+  }
+  
+  .character-details {
+    text-align: left;
+    max-width: 300px; 
+  }
+  
+  .blue-text {
+    color: blue;
+  }
+  
+  .red-text {
+    color: red;
+  }
+  
+  .comments-section {
+    margin-top: 15px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 8px;
+  }
