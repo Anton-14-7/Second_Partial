@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="40x40" href="https://i.pinimg.com/originals/a5/38/8c/a5388cf7c3411dfebf0e1530ea4f6445.png"> 
+    <title>Weather report</title>
+</head>
+<style>
+    body{
+        background-color: rgb(174, 20, 192);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+</style>
+<body>
+    <h1 style="text-align: center;">Welcome to the weather app!</h1>
+    <h2 style="text-align: center;">Enter tha name of a city:</h2>
+    <form action="/city" method="get">
+        <label for="cityName">City Name</label>
+        <input id="cityName" type="text" name="cityName">
+        <button type="submit">Click me</button>
+    </form>
+</body>
+</html>

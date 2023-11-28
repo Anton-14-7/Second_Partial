@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="40x40" href="https://i.pinimg.com/originals/a5/38/8c/a5388cf7c3411dfebf0e1530ea4f6445.png">
+    <title>City Selected</title>
+</head>
+
+<style>
+    body{
+        background-color:  rgb(65, 7, 202);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+</style>
+
+<body>
+    <h1>You have selected <%= city_name %> !</h1>
+
+    <% if (error) { %>
+      <p>Error: <%= error %></p>
+    <% } else { %>
+      <p>Temperature: <%= temperature %> °C</p>
+      <img src="https://openweathermap.org/img/w/<%= icon %>.png" alt="Weather Icon">
+    <% } %>
+
+    <br>
+    <a href="/">Go back to the main page</a>
+</body>
+
+</html>
